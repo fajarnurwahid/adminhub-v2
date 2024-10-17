@@ -98,6 +98,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,
+body {
+    overflow: hidden;
+}
 body {
     font-family: "Onest", sans-serif;
 }
@@ -249,22 +253,7 @@ button {
     display: flex;
     align-items: center;
     padding: 0 16px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 30;
     background-color: var(--white);
-}
-.topbar::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -32px;
-    width: 32px;
-    height: 32px;
-    border-radius: var(--rounded-full);
-    box-shadow: -16px -16px 0 var(--white);
-    pointer-events: none;
 }
 .topbar-toggle {
     width: 36px;
@@ -424,9 +413,11 @@ button {
     padding: 0 12px;
 }
 .content {
-    min-height: 100vh;
+    height: calc(100vh - 48px);
+    overflow-y: auto;
     padding: 16px;
     background-color: var(--neutral-100);
+    border-radius: var(--rounded-2xl) var(--rounded-2xl) 0 0;
 }
 .content-title {
     font-size: var(--text-2xl);
@@ -484,10 +475,6 @@ button {
 
 /* start: Breakpoints */
 @media screen and (max-width: 767px) {
-    body {
-        overflow-x: hidden;
-    }
-
     .main {
         width: calc(100% - 56px);
     }
