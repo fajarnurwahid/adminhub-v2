@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Adminhub V2</title>
+    </head>
+    <body>
+        <!-- start: Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <a href="#" class="sidebar-brand-link">
+                    <i class="ri-user-smile-fill sidebar-brand-link-icon"></i>
+                    <span class="sidebar-brand-link-text">Adminhub</span>
+                </a>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item active">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <i
+                                class="ri-dashboard-2-line sidebar-menu-item-link-icon"
+                            ></i>
+                            <span class="sidebar-menu-item-link-text"
+                                >Dashboard</span
+                            >
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <i
+                                class="ri-store-2-line sidebar-menu-item-link-icon"
+                            ></i>
+                            <span class="sidebar-menu-item-link-text"
+                                >My Store</span
+                            >
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <i
+                                class="ri-bar-chart-line sidebar-menu-item-link-icon"
+                            ></i>
+                            <span class="sidebar-menu-item-link-text"
+                                >Analytics</span
+                            >
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <i
+                                class="ri-chat-1-line sidebar-menu-item-link-icon"
+                            ></i>
+                            <span class="sidebar-menu-item-link-text"
+                                >Message</span
+                            >
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <i
+                                class="ri-group-3-line sidebar-menu-item-link-icon"
+                            ></i>
+                            <span class="sidebar-menu-item-link-text"
+                                >Team</span
+                            >
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item sidebar-menu-item-bottom">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <i
+                                class="ri-settings-line sidebar-menu-item-link-icon"
+                            ></i>
+                            <span class="sidebar-menu-item-link-text"
+                                >Settings</span
+                            >
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item sidebar-menu-item-danger">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <i
+                                class="ri-logout-circle-line sidebar-menu-item-link-icon"
+                            ></i>
+                            <span class="sidebar-menu-item-link-text"
+                                >Logout</span
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end: Sidebar -->
+
+        <!-- start: Main -->
+        <div class="main">
+            <div class="topbar">
+                <button
+                    type="button"
+                    class="topbar-toggle"
+                    data-toggle="sidebar"
+                >
+                    <i class="ri-menu-2-line"></i>
+                </button>
+                <form
+                    action=""
+                    class="topbar-search-form topbar-search-form-desktop"
+                >
+                    <input
+                        type="text"
+                        class="topbar-search-form-control"
+                        placeholder="Search..."
+                    />
+                    <button type="submit" class="topbar-search-form-submit">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </form>
+                <ul class="topbar-menu">
+                    <li class="topbar-menu-item topbar-menu-item-mobile">
+                        <div class="dropdown">
+                            <a
+                                href="#"
+                                class="topbar-menu-item-link"
+                                data-toggle="dropdown"
+                            >
+                                <i class="ri-search-line"></i>
+                            </a>
+                            <div
+                                class="dropdown-menu-wrapper dropdown-menu-wrapper-lg"
+                            >
+                                <div class="topbar-search-form-dropdown">
+                                    <form action="" class="topbar-search-form">
+                                        <input
+                                            type="text"
+                                            class="topbar-search-form-control"
+                                            placeholder="Search..."
+                                        />
+                                        <button
+                                            type="submit"
+                                            class="topbar-search-form-submit"
+                                        >
+                                            <i class="ri-search-line"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="topbar-menu-item">
+                        <div class="dropdown">
+                            <a
+                                href="#"
+                                class="topbar-menu-item-link topbar-menu-item-link-notification"
+                                data-toggle="dropdown"
+                            >
+                                <i class="ri-notification-3-line"></i>
+                                <span
+                                    class="topbar-menu-item-link-notification-total"
+                                    >8</span
+                                >
+                            </a>
+                            <div class="dropdown-menu-wrapper">
+                                <p class="topbar-notification-title">
+                                    Notification
+                                </p>
+                                <div class="topbar-notification-wrapper">
+                                    <a
+                                        href="#"
+                                        class="topbar-notification-item"
+                                    >
+                                        <span
+                                            class="topbar-notification-item-icon"
+                                        >
+                                            <i class="ri-history-line"></i>
+                                        </span>
+                                        <p
+                                            class="topbar-notification-item-text"
+                                        >
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                        </p>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="topbar-notification-item"
+                                    >
+                                        <span
+                                            class="topbar-notification-item-icon"
+                                        >
+                                            <i class="ri-history-line"></i>
+                                        </span>
+                                        <p
+                                            class="topbar-notification-item-text"
+                                        >
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                        </p>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="topbar-notification-item"
+                                    >
+                                        <span
+                                            class="topbar-notification-item-icon"
+                                        >
+                                            <i class="ri-history-line"></i>
+                                        </span>
+                                        <p
+                                            class="topbar-notification-item-text"
+                                        >
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="topbar-menu-item">
+                        <div class="dropdown">
+                            <a
+                                href="#"
+                                class="topbar-menu-item-link"
+                                data-toggle="dropdown"
+                            >
+                                <img
+                                    src="https://placehold.co/36x36"
+                                    alt=""
+                                    class="topbar-menu-item-link-profile-image"
+                                />
+                            </a>
+                            <div
+                                class="dropdown-menu-wrapper dropdown-menu-wrapper-sm"
+                            >
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-menu-item">
+                                        <i
+                                            class="ri-user-line dropdown-menu-item-icon"
+                                        ></i>
+                                        <span class="dropdown-menu-item-text"
+                                            >Profile</span
+                                        >
+                                    </a>
+                                    <a href="#" class="dropdown-menu-item">
+                                        <i
+                                            class="ri-settings-line dropdown-menu-item-icon"
+                                        ></i>
+                                        <span class="dropdown-menu-item-text"
+                                            >Settings</span
+                                        >
+                                    </a>
+                                    <a href="#" class="dropdown-menu-item">
+                                        <i
+                                            class="ri-logout-circle-line dropdown-menu-item-icon"
+                                        ></i>
+                                        <span class="dropdown-menu-item-text"
+                                            >Logout</span
+                                        >
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1 class="content-title">Dashboard</h1>
+            </div>
+        </div>
+        <!-- end: Main -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.11"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
